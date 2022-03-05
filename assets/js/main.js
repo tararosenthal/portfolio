@@ -33,7 +33,7 @@ window.addEventListener("load", function() {
 	form.addEventListener("submit", function(e) {
 	  e.preventDefault();
 	  const data = new FormData(form);
-	  const action = e.target.action;
+	  const action = 'https://script.google.com/macros/s/AKfycbw1-RmsWKq_UUd0hQv1ZjfRFk_F29nUGmaV6VaBEQlJMQALxcSSo-uGhk-BlIVhl-6E/exec';
 	  fetch(action, {
 		method: 'POST',
 		body: data,
