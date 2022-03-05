@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Tara Rosenthal - Software Engineer</title>
+		<title>Tara Rosenthal | Software Engineer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -15,14 +15,14 @@
 
 		<!-- Header -->
 			<div id="header">
-				<span class="logo icon fa-smile-beam"></span>
+				<span class="logo icon"><i class="fa fa-globe-americas"></i></span>
 				<h1>Hi there, I'm Tara,
 				<br> 
 				a full-stack software engineer.</h1>
 				<p>What will we create together?</p>
 				<ul class="actions special">
 					<li>
-						<a href="#" class="button">Learn more</a>
+						<a href="#main" class="button">Learn more</a>
 					</li>
 				</ul>
 			</div>
@@ -31,11 +31,11 @@
 			<div id="main">
 
 				<header class="major container medium">
-					<h2>We conduct experiments that
+					<h2>I build software
 					<br />
-					may or may not seriously
+					to make your life easier
 					<br />
-					break the universe</h2>
+					and more colorful</h2>
 					<!--
 					<p>Tellus erat mauris ipsum fermentum<br />
 					etiam vivamus nunc nibh morbi.</p>
@@ -210,10 +210,10 @@
 				-->
 
 				<footer class="major container medium">
-					<h3>Get shady with science</h3>
-					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+					<h3>About Me</h3>
+					<p>I'm a software engineer in Dallas, TX. I code in Java, JavaScript, HTML, and CSS. I use React, Spring, Node.JS, Express JS, Mongo DB, PostgreSQL, Bootstrap, JUnit, Cypress, and MochaJS. I love to create websites and useful apps, incorporating unit and integration tests.</p>
 					<ul class="actions special">
-						<li><a href="#" class="button">Join our crew</a></li>
+						<li><a href="#contact-me" class="button">Get in touch</a></li>
 					</ul>
 				</footer>
 
@@ -223,23 +223,22 @@
 			<div id="footer">
 				<div class="container medium">
 
-					<header class="major last">
-						<h2>Questions or comments?</h2>
+					<header id="contact-me" class="major last">
+						<h2>Let's connect!</h2>
 					</header>
 
-					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor
-					orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
-
-					<form method="post" action="#">
+					<p>I'd love to create your next website or update your existing one. I'm interested in everything from freelance work to full-time positions from frontend to backend.</p>
+					
+					<form id="contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbw1-RmsWKq_UUd0hQv1ZjfRFk_F29nUGmaV6VaBEQlJMQALxcSSo-uGhk-BlIVhl-6E/exec">
 						<div class="row">
 							<div class="col-6 col-12-mobilep">
-								<input type="text" name="name" placeholder="Name" />
+								<input type="text" name="Name" placeholder="Name" required>
 							</div>
 							<div class="col-6 col-12-mobilep">
-								<input type="email" name="email" placeholder="Email" />
+								<input type="email" name="Email" placeholder="Email" required>
 							</div>
 							<div class="col-12">
-								<textarea name="message" placeholder="Message" rows="6"></textarea>
+								<textarea name="Message" placeholder="Message" required rows="6"></textarea>
 							</div>
 							<div class="col-12">
 								<ul class="actions special">
@@ -248,7 +247,9 @@
 							</div>
 						</div>
 					</form>
-
+					<div id="form-submitted-message" hidden>
+						<p>Form submitted!</p>
+					</div>
 					<ul class="icons">
 						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>

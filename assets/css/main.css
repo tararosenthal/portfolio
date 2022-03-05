@@ -2705,6 +2705,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
+		background-color: #4e97b9;
 		background-attachment: scroll,							fixed;
 		background-image: url("images/top-3200.svg"), url("images/header.jpg");
 		background-position: bottom center,				top left;
@@ -2754,12 +2755,12 @@ input, select, textarea {
 		#header input[type="button"],
 		#header .button {
 			background: #ffffff;
-			color: #4eb2b9;
+			color: #4e97b9;
 			border: solid 1px rgba(224, 224, 224, 0.75);
 		}
 
 		#header .logo {
-			background: #4eb2b9;
+			background: #4e97b9;
 			border-radius: 100%;
 			color: #ffffff;
 			cursor: default;
@@ -2788,7 +2789,7 @@ input, select, textarea {
 
 	#footer {
 		background-attachment: scroll;
-		background-color: #4eb2b9;
+		background-color: #4e97b9;
 		background-image: url("images/bottom-3200.svg");
 		background-position: top center;
 		background-repeat: repeat-x;
@@ -2839,7 +2840,7 @@ input, select, textarea {
 		#footer .button {
 			background: #ffffff;
 			box-shadow: inset 0 0 0 1px #ffffff;
-			color: #4eb980;
+			color: #4e97b9;
 		}
 
 			#footer input[type="submit"]:hover,
@@ -2945,7 +2946,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 8em 0 16em 0;
+				padding: 6.225em 0 12.225em 0;
 			}
 
 				#header h1 {
