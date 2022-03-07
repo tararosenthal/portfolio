@@ -1228,6 +1228,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 840px) {
 
+			.success-msg {
+				margin: 20px 0 20px 20px;
+			  }
+
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -2823,6 +2827,10 @@ input, select, textarea {
 			z-index: 0;
 		}
 
+		#footer br {
+			display: none;
+		}
+
 		#footer a {
 			color: #ffffff;
 		}
@@ -2869,8 +2877,65 @@ input, select, textarea {
 		}
 
 		#footer form {
-			margin: 3em 0;
+			margin: 3em 0 2em 0;
 		}
+
+		.success-msg {
+		  margin: 0;
+		  padding: 14px;
+		  border-radius: 4px 4px 4px 4px;
+		  box-shadow: inset 0 0 0 1px #ffffff;
+		  color: var(--primary-bg-color);
+		  background-color: rgba(255, 255, 255, 1);
+		  opacity: 0;
+		  visibility: hidden;
+		}
+
+		.show-hidden {
+			visibility: visible;
+		}
+
+		  .fade-out-image {
+			animation: fadeInOut 7.5s;
+			-webkit-animation: fadeInOut 7.5s;
+			-moz-animation: fadeInOut 7.5s;
+			-o-animation: fadeInOut 7.5s;
+			-ms-animation: fadeInOut 7.5s;
+		  }
+		  @keyframes fadeInOut {
+			0% {opacity:0;}
+			15% {opacity: 1;}
+			85% {opacity: 1;}
+			100% {opacity:0;}
+		  }
+		  
+		  @-moz-keyframes fadeInOut {
+			0% {opacity:1;}
+			15% {opacity: 1;}
+			85% {opacity: 1;}
+			100% {opacity:0;}
+		  }
+		  
+		  @-webkit-keyframes fadeInOut {
+			0% {opacity:1;}
+			15% {opacity: 1;}
+			85% {opacity: 1;}
+			100% {opacity:0;}
+		  }
+		  
+		  @-o-keyframes fadeInOut {
+			0% {opacity:1;}
+			15% {opacity: 1;}
+			85% {opacity: 1;}
+			100% {opacity:0;}
+		  }
+		  
+		  @-ms-keyframes fadeInOut {
+			0% {opacity:1;}
+			15% {opacity: 1;}
+			85% {opacity: 1;}
+			100% {opacity:0;}
+		  }
 
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.5);
@@ -3283,6 +3348,10 @@ input, select, textarea {
 				padding-left: 1em;
 				padding-right: 1em;
 			}
+
+				#footer br {
+					display: inline;
+				}
 
 				#footer .copyright li {
 					border: 0;

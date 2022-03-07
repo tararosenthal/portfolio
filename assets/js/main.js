@@ -39,7 +39,9 @@ window.addEventListener("load", function() {
 		body: data,
 	  })
 	  .then(() => {
-		alert("Success!");
+		form.reset();
+		document.getElementById('success-msg').classList.add('show-hidden');
+		document.getElementById('success-msg').classList.add('fade-out-image');
 	  })
 	});
   });
