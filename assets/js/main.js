@@ -55,7 +55,7 @@ window.addEventListener("load", function(){
 
 function assignSupportedImageType(feature, result) {
 	if (!result) {
-		document.documentElement.style.setProperty("--header-img-url", "url(images/header.jpg)");
+		document.getElementById("header").classList.add("webp-fix");
 	}
 }
 

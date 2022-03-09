@@ -10,7 +10,8 @@
 	--primary-bg-color: #0e6d8f;
 	/* --offset-color: #4e97b9; */
 	--offset-color: white;
-	--header-img-url: url(images/header.webp);
+	--header-img-url: url("images/header.webp");
+	--webp-fix-url: url("images/header.jpg");
 }
 
 html, body, div, span, applet, object,
@@ -2714,7 +2715,7 @@ input, select, textarea {
 
 /* Header */
 
-	#header {
+	.header-container {
 		background-color: var(--primary-bg-color);
 		background-attachment: scroll,							fixed, fixed;
 		background-image: url("images/top-3200.svg"), var(--header-img-url), linear-gradient(#064d6d, #1a7f9e);
@@ -2725,6 +2726,10 @@ input, select, textarea {
 		padding: 10em 0 20em 0;
 		position: relative;
 		text-align: center;
+	}
+
+	.webp-fix {
+		background-image: url("images/top-3200.svg"), var(--webp-fix-url), linear-gradient(#064d6d, #1a7f9e);
 	}
 
 		#header:before, #header:after {
@@ -3084,11 +3089,15 @@ input, select, textarea {
 
 		/* Header */
 
-			#header {
-				background-attachment: scroll,							scroll;
-				background-image: url("images/top-1600.svg"), var(--header-img-url);
-				background-size: 1600px 230px,				  cover;
+			.header-container {
+				background-attachment: scroll,							scroll, scroll;
+				background-image: url("images/top-1600.svg"), var(--header-img-url), linear-gradient(#064d6d, #1a7f9e);
+				background-size: 1600px 230px,				  cover, cover;
 				padding: 6em 0 12em 0;
+			}
+
+			.webp-fix {
+				background-image: url("images/top-1600.svg"), var(--webp-fix-url), linear-gradient(#064d6d, #1a7f9e);
 			}
 
 				#header:before {
@@ -3238,10 +3247,14 @@ input, select, textarea {
 
 		/* Header */
 
-			#header {
-				background-image: url("images/top-1280.svg"), var(--header-img-url);
-				background-size: 1280px 184px,				  cover;
+			.header-container {
+				background-image: url("images/top-1280.svg"), var(--header-img-url), linear-gradient(#064d6d, #1a7f9e);
+				background-size: 1280px 184px,				  cover, cover;
 				padding: 3em 0 7em 0;
+			}
+
+			.webp-fix {
+				background-image: url("images/top-1280.svg"), var(--webp-fix-url), linear-gradient(#064d6d, #1a7f9e);
 			}
 
 				#header:before {
