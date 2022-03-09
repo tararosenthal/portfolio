@@ -28,7 +28,7 @@
 
 })(jQuery);
 
-// check_webp_feature:
+/* // check_webp_feature:
 //   'feature' can be one of 'lossy', 'lossless', 'alpha' or 'animation'.
 //   'callback(feature, result)' will be passed back the detection result (in an asynchronous way!)
 function check_webp_feature(feature, callback) {
@@ -57,7 +57,7 @@ function assignSupportedImageType(feature, result) {
 	if (!result) {
 		document.getElementById("header").classList.add("webp-fix");
 	}
-}
+} */
 
 window.addEventListener("load", function() {
 	const form = document.getElementById('contact-form');
