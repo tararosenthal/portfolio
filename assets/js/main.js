@@ -59,7 +59,7 @@ function assignSupportedImageType(feature, result) {
 		const imgs = document.querySelectorAll("img");
 
 		for (const img of imgs) {
-			const imgSrcFragment = img.src.substring(0, img.src.lastIndexOf("."));
+			const imgSrcFragment = img.src.substring(img.src.lastIndexOf("images"), img.src.lastIndexOf("."));
 			img.src = `${imgSrcFragment}.png`;
 			break;
 		}
