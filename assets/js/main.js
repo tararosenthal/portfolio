@@ -56,6 +56,13 @@ window.addEventListener("load", function(){
 function assignSupportedImageType(feature, result) {
 	if (!result) {
 		document.getElementById("header").classList.add("webp-fix");
+		const imgs = document.querySelectorAll("img");
+
+		for (const img of imgs) {
+			let imgSrcFragment = img.src.substring(0, imgSrcFragment.lastIndexOf("."));
+			img.src = `${imgSrcFragment}.png`;
+			break;
+		}
 	}
 }
 

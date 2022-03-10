@@ -2189,7 +2189,7 @@ input, select, textarea {
 			-webkit-transition: opacity 0.25s ease-in-out;
 			-ms-transition: opacity 0.25s ease-in-out;
 			transition: opacity 0.25s ease-in-out;
-			background-image: url("images/overlay.png");
+			background-image: linear-gradient(rgba(6, 77, 109, 0.35), rgba(6, 77, 109, 0.35));
 			content: '';
 			display: block;
 			height: 100%;
@@ -2202,6 +2202,7 @@ input, select, textarea {
 
 		.image img {
 			display: block;
+			width: 100%;
 		}
 
 		.image.fit {
@@ -2223,45 +2224,23 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		.image.icon {
-			-moz-perspective: 500px;
-			-webkit-perspective: 500px;
-			-ms-perspective: 500px;
-			perspective: 500px;
-		}
-
-			.image.icon:before {
-				-moz-transition: -moz-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
-				-webkit-transition: -webkit-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
-				-ms-transition: -ms-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
-				transition: transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
-				color: #fff;
-				font-size: 6em;
-				height: 1em;
-				left: 50%;
-				line-height: 1em;
-				margin: -0.5em 0 0 -0.5em;
-				position: absolute;
-				text-align: center;
-				top: 50%;
-				width: 1em;
-				z-index: 1;
+			.image img {
+				-moz-transition: -moz-transform 0.35s ease-in-out;
+				-webkit-transition: -webkit-transform 0.35s ease-in-out;
+				-ms-transition: -ms-transform 0.35s ease-in-out;
+				transition: transform 0.35s ease-in-out;
 			}
 
-			.image.icon:hover:before {
-				-moz-transform: translateZ(1em);
-				-webkit-transform: translateZ(1em);
-				-ms-transform: translateZ(1em);
-				transform: translateZ(1em);
+			.image:hover img {
+				-moz-transform: scale(1.025);
+				-webkit-transform: scale(1.025);
+				-ms-transform: scale(1.025);
+				transform: scale(1.025);
 			}
 
-			.image.icon:hover:after {
+			.image:hover:after {
 				opacity: 1;
 			}
-
-	span.image.icon {
-		cursor: default;
-	}
 
 /* Icon */
 
