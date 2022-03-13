@@ -2211,7 +2211,8 @@ input, select, textarea {
 
 			.image.fit img {
 				display: block;
-				width: 100%;
+				width: 150%;
+				margin-left: -100px;
 			}
 
 		.image.feature {
