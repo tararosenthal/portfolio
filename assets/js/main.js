@@ -57,11 +57,14 @@ function assignSupportedImageType(feature, result) {
 	if (!result) {
 		document.getElementById("header").classList.add("webp-fix");
 		const imgs = document.querySelectorAll("img");
-
+		let count = 0;
 		for (const img of imgs) {
 			const imgSrcFragment = img.src.substring(img.src.lastIndexOf("images"), img.src.lastIndexOf("."));
 			img.src = `${imgSrcFragment}.png`;
-			break;
+			count++;
+			if (count == 2) {
+				break;
+			}
 		}
 	}
 }
